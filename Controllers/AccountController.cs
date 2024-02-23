@@ -15,6 +15,7 @@ namespace CapstoneConnect.Controllers
         [Route("Login")]
         public IActionResult Login(LoginModel model)
         {
+            var context = HttpContext;
             
             if (!ModelState.IsValid)
             {

@@ -1,9 +1,13 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { useHistory } from 'react-router-dom';
+import Calendar from './Calender';
 
 export default function LoginForm() {
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
+    const [redirect, setRedirect] = useState(false);
+    const history = useHistory();
 
     const handleLogin = async (e) => {
         e.preventDefault();
@@ -19,7 +23,7 @@ export default function LoginForm() {
 
             if (response.ok) {
                 const data = await response.json();
-                // Handle successful login (e.g., store token in localStorage, redirect user)
+                setRedirect(true);
                 console.log('Login successful', data);
             } else {
                 // Handle login error (e.g., display error message)
@@ -29,6 +33,10 @@ export default function LoginForm() {
             console.error('An error occurred', error);
         }
     };
+
+    if (redirect) {
+        history.push("/calendar");
+    }
 
     return (
         <div className='loginform'>
