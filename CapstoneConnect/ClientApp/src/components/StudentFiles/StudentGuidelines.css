@@ -1,0 +1,83 @@
+﻿.flex-1 {
+    flex: 1;
+    padding-left: 0.8rem; /* pl-6 */
+    padding-top: 2rem; /* pt-1 */
+}
+
+.text-blue-500 {
+    color: #3b82f6; /* Tailwind blue-500 */
+}
+
+.mr-2 {
+    margin-right: 0.5rem;
+}
+
+.mb-6 {
+    margin-bottom: 1.5rem;
+}
+
+.text-lg {
+    font-size: 1.125rem; /* text-lg */
+    line-height: 1.75rem; /* Tailwind text-lg line-height */
+}
+
+.font-semibold {
+    font-weight: 600;
+}
+
+.text-gray-800 {
+    color: #1f2937; /* Tailwind gray-800 */
+}
+
+.flex {
+    display: flex;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.list-none {
+    list-style: none;
+    padding: 0;
+}
+
+.space-y-2 > * + * {
+    margin-top: 0.5rem;
+}
+
+.items-start {
+    align-items: flex-start;
+}
+
+.mt-1 {
+    margin-top: 0.25rem;
+}
+
+.text-green-500 {
+    color: #10b981; /* Tailwind green-500 */
+}
+
+.text-blue-400 {
+    color: #60a5fa; /* Tailwind blue-400 */
+}
+
+.text-orange-400 {
+    color: #fb923c; /* Tailwind orange-400 */
+}
+
+.text-yellow-500 {
+    color: #f59e0b; /* Tailwind yellow-500 */
+}
+
+.text-red-400 {
+    color: #f87171; /* Tailwind red-400 */
+}
+
+.text-purple-400 {
+    color: #a78bfa; /* Tailwind purple-400 */
+}
+
+.text-green-400 {
+    color: #34d399; /* Tailwind green-400 */
+}

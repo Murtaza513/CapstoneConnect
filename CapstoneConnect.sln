@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33110.190
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CapstoneConnect", "CapstoneConnect\CapstoneConnect.csproj", "{2CAA6F9E-3626-4A3B-BA84-2F5D549ADBC3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Authentication", "Authentication\Authentication.csproj", "{1F7AC5EC-CDC3-4507-8716-836CAEA53643}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CapstoneConnectDatabase", "CapstoneConnect.Model\CapstoneConnectDatabase.csproj", "{C495EA41-255C-4070-8310-FAC95AC76663}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CapstoneConnectCommunication", "CapstoneConnectCommunication\CapstoneConnectCommunication.csproj", "{EE0046DD-C0BA-4C55-AB01-51AF9143DFE3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CapstoneConnectLog", "CapstoneConnectLog\CapstoneConnectLog.csproj", "{B423C41C-6281-4E06-A96F-E1A99143AB4E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2CAA6F9E-3626-4A3B-BA84-2F5D549ADBC3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2CAA6F9E-3626-4A3B-BA84-2F5D549ADBC3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2CAA6F9E-3626-4A3B-BA84-2F5D549ADBC3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2CAA6F9E-3626-4A3B-BA84-2F5D549ADBC3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1F7AC5EC-CDC3-4507-8716-836CAEA53643}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F7AC5EC-CDC3-4507-8716-836CAEA53643}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F7AC5EC-CDC3-4507-8716-836CAEA53643}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F7AC5EC-CDC3-4507-8716-836CAEA53643}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C495EA41-255C-4070-8310-FAC95AC76663}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C495EA41-255C-4070-8310-FAC95AC76663}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C495EA41-255C-4070-8310-FAC95AC76663}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C495EA41-255C-4070-8310-FAC95AC76663}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EE0046DD-C0BA-4C55-AB01-51AF9143DFE3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE0046DD-C0BA-4C55-AB01-51AF9143DFE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE0046DD-C0BA-4C55-AB01-51AF9143DFE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE0046DD-C0BA-4C55-AB01-51AF9143DFE3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B423C41C-6281-4E06-A96F-E1A99143AB4E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B423C41C-6281-4E06-A96F-E1A99143AB4E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B423C41C-6281-4E06-A96F-E1A99143AB4E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B423C41C-6281-4E06-A96F-E1A99143AB4E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {673C0913-24AB-4647-835C-48291B73E34B}
+	EndGlobalSection
+EndGlobal

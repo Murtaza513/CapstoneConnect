@@ -1,0 +1,1 @@
+ model.encode(existing_proposal_texts, convert_to_tensor=True)

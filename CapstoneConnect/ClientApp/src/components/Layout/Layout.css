@@ -1,0 +1,27 @@
+﻿.layout {
+    display: flex;
+}
+
+.layout__content {
+    /*flex: 1;*/
+    margin: 80px 15px 0px 0px;
+    width: calc(100% - 290px);
+    min-height: 300px;
+    transition: margin-left 0.3s;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+    border-radius: 10px;
+}
+
+@media (max-width: 988px) {
+    .layout__content {
+        margin-left: 100px;
+    }
+}
+
+@media (max-width: 768px) {
+    .layout__content {
+        margin: 80px 15px 0px 0px;
+        width: 95%;
+    }
+}

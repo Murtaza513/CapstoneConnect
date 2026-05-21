@@ -1,0 +1,143 @@
+﻿.sidebar {
+    position: fixed;
+    top: 60px;
+    background: white;
+    box-shadow: rgba(0, 0, 0, 0.06) 1.95px 2.6px;
+    padding: 20px 0px;
+    width: 260px;
+    left: 0px;
+    display: flex;
+    flex-direction: column;
+    height: calc(100% - 60px);
+    overflow-y: auto;
+    transition: left 0.8s;
+}
+
+    .sidebar li {
+        list-style: none;
+    }
+
+    .sidebar a {
+        text-decoration: none;
+        font-size: 16px;
+        color: #6A6A6A;
+    }
+
+.sidebar--open {
+    left: 0;
+}
+
+.sidebar__close {
+    display: none;
+    font-size: 1.6em;
+    background: none;
+    border: none;
+    color: #4682A9;
+    cursor: pointer;
+}
+
+.sidebar__nav {
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    margin-right:25px;
+}
+
+.sidebar__item {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    cursor: pointer;
+}
+
+    .sidebar__item li {
+        border-radius: 12px;
+        padding: 10px;
+        margin: 0px;
+        display: flex;
+        align-items: center;
+        white-space: nowrap;
+        text-align: center;
+    }
+
+.sidebar__item li img {
+     margin-right: 10px;
+    height: 22px;
+    object-fit: cover;
+}
+
+.sidebar__item li:hover {
+    background: #4682a9;
+    color: white;
+    
+}
+
+    .sidebar__item li:hover a {
+        color: white;
+        transition: 0.6s;
+    }
+
+    .sidebar__item li:hover img {
+        filter: brightness(0) invert(1);
+        transition: 0.6s;
+    }
+
+.sidebar__item li img {
+    height: 22px;
+    object-fit: cover;
+}
+
+    .sidebar__item.active {
+        background-color: #4682a9;
+        border-radius: 12px;
+        color: white;
+    }
+
+        .sidebar__item.active li {
+            color: white; 
+        }
+
+        .sidebar__item.active .sideBarIcon {
+            filter: brightness(0) invert(1);    
+        }
+
+.endBtn ul a:hover {
+    text-decoration: none;
+}
+
+.endBtn ul li:hover {
+    background-color: #5a9bc4;
+    color: white;
+    border-radius: 12px;
+}
+
+    .endBtn ul li:hover .sideBarIcon {
+        filter: brightness(0) invert(1);
+    }
+    
+@media (max-width: 768px) {
+    .sidebar {
+        width: 250px;
+        height: 100%;
+        background-color: white;
+        
+        top: 0;
+        left: -65%;
+        transition: left 0.8s;
+        z-index: 1000;
+    }
+
+    .sidebar--open {
+        left: 0;
+    }
+
+    .sidebar__close {
+        display: block;
+        padding-left: 88%;
+        cursor: pointer;
+    }
+        .sidebar__close:hover {
+            color: #31688c;
+        }
+
+
+}

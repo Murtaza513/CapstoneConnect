@@ -1,0 +1,194 @@
+﻿
+.channel-list {
+    width: 25%;
+    background: #fff;
+    padding: 10px;
+    overflow-y: auto;
+}
+
+.channel-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    cursor: pointer;
+}
+
+    .channel-item.selected {
+        background: #e0e0e0;
+    }
+
+    .channel-item:hover {
+        background: #f0f0f0;
+    }
+
+@media (max-width: 1100px) {
+    .channel-list {
+        width: 40%; /* Full width on smaller screens */
+    }
+
+    .channel-item {
+        flex-direction: row; /* Revert to row layout on small screens */
+        justify-content: space-between;
+    }
+
+    .channel-info {
+        display: flex;
+        flex-direction: column;
+        width: auto; /* Adjust width for better spacing */
+    }
+}
+
+.avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.channel-info {
+    flex-grow: 1;
+}
+
+.channel-name {
+    margin: 0;
+    font-weight: bold;
+}
+
+.channel-last-message {
+    margin: 0;
+    color: #888;
+}
+
+/* Chat Window Styles */
+.chat-container {
+    display: flex;
+    flex-direction: column;
+    width: 74%;
+    background: #fff;
+    padding: 10px;
+}
+
+.chat-header {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+}
+
+.avatar-large {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+/*Chat window datalist here*/
+
+.chat-window {
+    flex-grow: 1;
+    padding: 10px;
+    overflow-y: auto; 
+    background: #f9f9f9;
+    height: 360px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+/* Message container should only handle alignment */
+.message-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+/* Message content and styling */
+
+
+    .message-container.sent {
+        align-items: flex-end;
+    }
+
+.message {
+    max-width: 60%;
+    padding: 10px;
+    border-radius: 10px;
+    word-wrap: break-word;
+}
+
+    .message.sent {
+        background: #daf1da;
+    }
+
+    .message.received {
+        background: #f1f1f1;
+    }
+
+.message-time {
+    font-size: 0.75em; 
+    color: #888; 
+    margin-top: 2px; 
+    margin-left: 4px; 
+}
+
+.sent-time {
+    text-align: right;
+    align-self: flex-end;
+    margin-right: 8px; 
+}
+
+.received-time {
+    text-align: left;
+    align-self: flex-start;
+    margin-left: 8px; 
+}
+/*Scroll bar style setup*/
+.chat-window::-webkit-scrollbar {
+    width: 8px; 
+}
+
+.chat-window::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+    border-radius: 10px;
+}
+
+.chat-window::-webkit-scrollbar-thumb {
+    background: #888; 
+    border-radius: 10px; 
+}
+
+    /* Hover effect for the scrollbar thumb */
+    .chat-window::-webkit-scrollbar-thumb:hover {
+        background: #555; 
+    }
+
+/* Message Input Styles */
+.message-input {
+    display: flex;
+    padding: 10px;
+    border-top: 1px solid #ddd;
+}
+
+    .message-input input {
+        flex-grow: 1;
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+    }
+
+    .message-input button {
+        height:40px;
+        padding: 10px 20px;
+        margin-left: 10px;
+        background: #6200ee;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+        .message-input button:hover {
+            background: #4a00c7;
+        }

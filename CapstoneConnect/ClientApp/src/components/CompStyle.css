@@ -1,0 +1,3033 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;700&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Roboto', sans-serif;
+}
+
+p, li {
+    font-family: 'Poppins', sans-serif;
+}
+
+.formcontainerr h4 {
+    color: black !important;
+    font-size: 20px;
+}
+
+.formcontainerr h2 {
+    color: #4682A9 !important;
+    font-size: 55px;
+    font-weight: bold;
+    text-transform: capitalize;
+    line-height: 65px;
+}
+
+.formcontainerr {
+    background: white;
+    border-radius: 40px;
+    padding: 40px;
+}
+
+@media (max-width: 780px) {
+    .carousel-container {
+        display: none;
+    }
+
+    .formcontainerr {
+        background: white;
+        border-radius: 40px;
+        
+        /*padding: 40px;
+        margin: 40px;*/
+    }
+}
+
+.headingContainer {
+    width: 95%; padding: 0 20px
+}
+
+.headingContainer h2 {
+    text-align: left; border-bottom: 1px solid #E4E4E4; padding-bottom: 12px
+}
+/* login form  */
+.loginform {
+    padding-top: 10px;
+    padding-bottom: 15px;
+}
+
+    .loginform input {
+        margin-bottom: 45px;
+        border-radius: 10px;
+        border: 1px solid #4285F4;
+        padding: 13px 20px;
+        font-size: 14px;
+        color: #808080;
+    }
+
+        .loginform input::placeholder {
+            font-size: 14px;
+            color: #808080;
+        }
+
+    .loginform label {
+        font-size: 16px;
+        color: black;
+    }
+
+    .loginform .signInBtn {
+        font-size: 16px;
+        width: 100% !important;
+        border-radius: 10px;
+        background: #4682A9;
+        padding: 11px 0;
+        display: block;
+        text-align: center;
+        color: white;
+        text-decoration: none;
+    }
+        .loginform .signInBtn:disabled {
+            background: #ccc;
+            cursor: not-allowed; 
+        }
+
+        .loginform .signInBtn:hover:not(:disabled) {
+            background: #fd78ad;
+        }
+
+        /*.loginform .signInBtn:hover {
+            background: #fd78ad !important;
+        }*/
+
+/* NavBar  */
+
+/*.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #4682A9;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+}*/
+
+/*.navbar {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}*/
+
+.logo {
+    margin-left: 1.7rem;
+}
+
+    .logo img {
+        height: 32px;
+    }
+
+.nav-items {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-item {
+    list-style: none;
+    margin-left: 0.3rem;
+    position: relative;
+}
+
+.notification-icon,
+.user-icon {
+    height: 30px;
+    cursor: pointer;
+}
+
+.notification-count {
+    position: absolute;
+    top: -5px;
+    right: -10px;
+    display: inline-block;
+    padding: 3px 8px;
+    border-radius: 50%;
+    background-color: red;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.notification-dropdown .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 20%;
+    transform: translateX(-50%);
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 0;
+    max-height: 300px;
+    overflow-y: auto;
+    width: 250px;
+    display: block;
+}
+
+.dropdown-menu li {
+    margin: 0;
+    padding: 10px 15px;
+}
+
+.dropdown-menu span {
+    display: block;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+    .dropdown-menu span:last-child {
+        border-bottom: none;
+    }
+
+    .dropdown-menu span:hover {
+        background-color: #f5f5f5;
+    }
+/* sidebar */
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9;
+}
+
+.sidebar-main {
+    position: fixed;
+    top: 60px; /* Adjusted for the height of the navbar */
+    background: white;
+    box-shadow: rgba(0, 0, 0, 0.06) 1.95px 2.6px;
+    padding: 40px 20px;
+    width: 20%;
+    left: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: calc(100% - 60px); /* Adjusted for the height of the navbar */
+    overflow-y: auto; /* Add scrolling for smaller screens */
+}
+
+    .sidebar-main li {
+        list-style: none;
+    }
+
+    .sidebar-main ul {
+        padding: 0;
+        margin: 0;
+    }
+
+    .sidebar-main a {
+        font-size: 16px;
+        color: #6A6A6A;
+        text-decoration: none;
+    }
+
+.sidebar-items li {
+    border-radius: 12px;
+    padding: 15px 20px;
+    margin-bottom: 4px;
+    display: flex;
+    align-items: center;
+    white-space: nowrap; /* Prevent text overflow */
+    text-align: center; /* Center the text */
+}
+
+    .sidebar-items li img {
+        margin-right: 10px;
+    }
+
+    .sidebar-items li:hover {
+        background: #4682a9;
+        color: white;
+        cursor: pointer !important;
+    }
+
+        .sidebar-items li:hover a {
+            color: white;
+            transition: 0.6s;
+        }
+
+        .sidebar-items li:hover img {
+            filter: brightness(0) invert(1);
+            transition: 0.6s;
+        }
+
+    .sidebar-items li img {
+        height: 22px;
+        object-fit: cover;
+    }
+
+.endBtn li {
+    background: #4682a9;
+    border-radius: 12px;
+    text-align: center;
+    padding: 14px 0;
+}
+
+    .endBtn li a {
+        color: white;
+    }
+
+    .endBtn li img {
+        margin-right: 12px;
+    }
+/*@media (max-width: 1000px) {
+    .sidebar-main {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+        .sidebar-main ul {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .sidebar-main li {
+            flex: 1 1 45%;*/ /* Adjust the flex basis to fit items */
+            /*margin: 5px;
+        }
+
+    .sidebar-items li img {
+        height: 20px;
+    }
+}*/
+
+/* calendar */
+
+.conatiner.calenderMain {
+}
+
+.calenderMain {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    /*margin: 0 auto;
+    margin-right: 0;
+    margin-top: 4%;*/
+    overflow-y: hidden !important;
+}
+
+    .calenderMain .conatiner {
+        background: white;
+        width: 100%;
+        border-radius: 13px;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    }
+
+        .calenderMain .conatiner .innersection {
+            height: 420px;
+            overflow: auto;
+        }
+
+    .calenderMain h2 {
+        text-align: center;
+        background: #4682a9;
+        padding: 18px 0;
+        border-radius: 12px 12px 0 0px;
+        color: white;
+        font-size: 30px;
+        text-transform: uppercase;
+        font-weight: 600;
+    }
+
+    .calenderMain .sec1 h3 {
+        text-align: center;
+        font-size: 24px;
+        text-transform: uppercase;
+        border-bottom: 2px solid black;
+        width: fit-content;
+        margin: 20px auto;
+        /* margin-top: 20px; */
+    }
+
+    .calenderMain .sec1 ul {
+        margin: 0;
+        padding: 0;
+    }
+
+        .calenderMain .sec1 ul li {
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            padding: 15px 30px;
+        }
+
+            .calenderMain .sec1 ul li:nth-child(even) {
+                background: #ebf0fa;
+            }
+
+            .calenderMain .sec1 ul li h5 {
+                margin: 0;
+            }
+
+            .calenderMain .sec1 ul li p {
+                margin: 0;
+            }
+
+            .calenderMain .sec1 ul li h5 {
+                font-size: 18px;
+            }
+
+/* Responsive adjustments */
+@media (max-width: 1128px) {
+
+        
+
+        .calenderMain .sec1 ul li {
+            flex-direction: row; /* Stack items vertically */
+            align-items: flex-start; /* Align items to the start */
+        }
+
+            .calenderMain .sec1 ul li div,
+            .calenderMain .sec1 ul li button {
+                width: 100px; 
+                margin-bottom: 10px; /* Space between items */
+                text-align: center; /* Center text inside buttons */
+            }
+}
+
+html {
+}
+
+/*supervisors*/
+
+.supervisorMain h2 {
+    color: black;
+    background: transparent;
+    text-align: left;
+    padding: 0 20px;
+    border-bottom: 1px solid #E4E4E4;
+    padding-bottom: 12px;
+}
+
+.mainmargins {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+    margin-right: 0;
+    margin-top: 2%;
+}
+
+h2 {
+    text-transform: capitalize;
+    font-weight: 600;
+}
+
+.supervisorMain .super2 {
+    display: flex;
+    flex-direction: row !important;
+    padding: 14px 10px;
+}
+
+    .supervisorMain .super2 p {
+        margin-right: 40px;
+        color: #3C3C3C;
+        font-weight: 500;
+        margin-bottom: 0;
+    }
+
+.supervisorMain p.availble_s {
+    color: #0CBC8B !important;
+}
+
+.supervisorMain p.occupied_s {
+    color: #F93333 !important;
+}
+
+.supervisorMain .super3 .col-3 {
+    width: 31%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.supervisorMain .super3 {
+    padding: 10px 10px;
+}
+
+.supervisorMain .supervisor_card {
+    background: white;
+    border-radius: 5px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    padding: 22px;
+}
+
+.supervisorMain .imgSec {
+    display: flex;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+    .supervisorMain .imgSec h4 {
+        font-size: 18px;
+        font-weight: 600;
+        margin: 0;
+        margin-left: 10px;
+    }
+
+.supervisorMain .supervisor_card p {
+    color: #9A9A9A;
+    font-size: 14px;
+}
+
+.supervisorMain .imgSec img {
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 50%;
+}
+
+.supervisorMain .supervisorSchdule {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+}
+
+    .supervisorMain .supervisorSchdule div {
+        display: flex;
+        align-items: center;
+    }
+
+    .supervisorMain .supervisorSchdule p {
+        margin: 0;
+        color: #3C3C3C;
+        font-size: 14px;
+        padding-left: 7px;
+    }
+
+.supervisorMain .supervisor_card button {
+    background: #4682A9;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    color: white;
+    padding: 9px 0;
+}
+
+.supervisorMain .supervisor_card:hover {
+    background: #4682a9;
+    transition: 0.6s ease-in;
+}
+
+    .supervisorMain .supervisor_card:hover button {
+        background: white;
+        color: black;
+        transition: 0.6s ease-in;
+    }
+
+    .supervisorMain .supervisor_card:hover p {
+        color: white;
+    }
+
+    .supervisorMain .supervisor_card:hover .supervisorSchdule img {
+        filter: brightness(0)invert(1);
+    }
+
+    .supervisorMain .supervisor_card:hover h4 {
+        color: white;
+    }
+
+.menu {
+    position: absolute;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 2px;
+    z-index: 1000;
+    left:146px;
+    top:30px
+}
+
+    .menu ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .menu li {
+        padding: 8px 12px;
+        cursor: pointer;
+    }
+
+        .menu li:hover {
+            background-color: #f0f0f0;
+        }
+
+/*    STudent Dashboard*/
+.stdDashMain .feedback {
+    width: 100% !important;
+    background: #dbcef5;
+    border-radius: 30px;
+    min-height: 15em;
+    max-height: 15em;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    overflow-y: auto;
+    padding: 1rem;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+.feedback-content {
+    max-height: 300px; 
+    
+}
+
+    /* Custom scrollbar styling */
+.feedback::-webkit-scrollbar {
+    width: 4px; 
+}
+
+.feedback::-webkit-scrollbar-track {
+    background: #dbcef5; 
+    border-radius: 30px;
+}
+
+    .feedback::-webkit-scrollbar-thumb {
+        background-color: grey; 
+        border-radius: 10px;
+        border: 2px solid #dbcef5;
+    }
+
+
+@media (max-width: 1200px) {
+    .stdDashMain .feedback {
+        max-height: 250px; 
+    }
+}
+.stdDashMain .banner {
+    width: 100% !IMPORTANT;
+    background: linear-gradient(95deg, rgba(70, 130, 169, 1) 52%, rgba(223, 208, 247, 1) 100%);
+    border-radius: 30px;
+    margin-top: 2px;
+    margin-bottom: 4px;
+    min-height: 15em;
+    max-height: 15em;
+}
+
+.stdDashMain .banner_sm {
+    width: 100% !IMPORTANT;
+    background: linear-gradient(95deg, rgba(70, 130, 169, 1) 52%, rgba(223, 208, 247, 1) 100%);
+    border-radius: 30px;
+    margin-top: 2px;
+    margin-bottom: 4px;
+    min-height: 22em;
+    max-height: 22em;
+}
+
+    .stdDashMain .banner .row {
+        display: flex;
+        flex-direction: row;
+    }
+
+.stdDashMain .bannertxt {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 0 auto;
+    padding-top: 6px
+}
+
+.stdDashMain .bannerimg {
+    width: 45%;
+    margin: 0 auto;
+    margin-right: 4%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+    .stdDashMain .bannerimg img {
+        width: 75%;
+    }
+
+.stdDashMain {
+    margin: 0 25px;
+}
+
+    .stdDashMain .bannertxt p {
+        color: white;
+    }
+
+    .stdDashMain .bannertxt {
+        color: white;
+    }
+
+    .stdDashMain .bannertxt p.curDate {
+        margin-bottom: 30px;
+    }
+
+.barcontainer {
+    background-color: #9bc9c7;
+    position: relative;
+    width: 9px;
+    height: 170px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    margin: 0 15px;
+}
+
+.bar {
+    background-color: #05AF35;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    box-sizing: border-box;
+    animation: grow 1.5s ease-out forwards;
+    transform-origin: bottom;
+    border-radius: 20px;
+}
+
+@keyframes grow {
+    from {
+        transform: scaleY(0);
+    }
+}
+
+.latTask ul {
+    padding: 0;
+    margin-bottom: 0;
+}
+
+    .latTask ul li {
+        list-style: none;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+.TaskProgress {
+    margin-top: 20px;
+}
+
+    .TaskProgress .progress {
+        width: 48%;
+    }
+
+.latTask {
+    max-height: 360px;
+    /*height: 300px; */
+    /*overflow-y: auto;*/ 
+    background: white;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    padding: 14px;
+    margin: 18px 0;
+    border-radius: 10px;
+}
+
+.dahboardContent h4 {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.latTask li {
+    margin-top: 15px;
+}
+
+    .latTask li .taskName {
+        font-size: 13px;
+    }
+
+        .latTask li .taskName span {
+            font-size: 15px;
+            color: #4682a9;
+            font-weight: 500;
+        }
+
+@media (max-width: 768px) {
+    .latTask {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .TaskProgress .progress {
+        width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    .latTask ul li {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .TaskProgress .progress {
+        width: 100%;
+    }
+}
+
+.timeSpentMain {
+    background: white;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.dahboardContent img {
+    width: 100%;
+}
+
+.verticalbarsMain {
+    display: flex;
+    flex-wrap: wrap; 
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.barcontainer {
+    display: flex;
+}
+
+.barcontainer h5 {
+    font-size: 14px;
+    text-align: center;
+    position: relative;
+    /*margin-top: 10px;*/
+    /*top: -30px;*/
+    color: #0000007a;
+}
+
+@media (max-width: 1200px) {
+    .barcontainer {
+        margin-bottom: 40px;
+    }
+}
+
+@media (max-width: 576px) {
+    .barcontainer {
+        margin-bottom: 10px;
+    }
+}
+
+.dahboardContent h3 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.teamMembersSec {
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.SuepervisorsSec {
+    margin-bottom: 30px;
+}
+
+.SuepervisorFeedback h3 {
+    margin-bottom: 13px;
+}
+
+.feebbackMain {
+    background: white;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    border-radius: 15px;
+    padding: 25px 15px;
+    padding-bottom: 0;
+}
+
+    .feebbackMain p {
+        font-size: 14px;
+        margin-bottom: 8px;
+        color: #00000096;
+    }
+
+.feed1 {
+    padding-bottom: 30px;
+}
+
+.feebbackMain button {
+    border: none;
+    background: transparent;
+    font-size: 15px;
+    color: #4682a9;
+    padding: 0;
+    text-decoration: underline;
+}
+
+.latTask ul {
+    padding: 0;
+    margin-bottom: 0;
+}
+
+    .latTask ul li {
+        list-style: none;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+.TaskProgress {
+    margin-top: 20px;
+}
+
+    .TaskProgress .progress {
+        width: 48%;
+    }
+
+.latTask {
+    background: white;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    padding: 20px;
+    margin: 18px 0;
+    border-radius: 10px;
+}
+
+
+.dahboardContent h4 {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.latTask li {
+    margin-top: 15px;
+}
+
+    .latTask li .taskName {
+        font-size: 13px;
+    }
+
+        .latTask li .taskName span {
+            font-size: 15px;
+            color: #4682a9;
+            font-weight: 500;
+        }
+
+.timeSpentMain {
+    background: white;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+}
+
+.dahboardContent img {
+    width: 100%;
+}
+
+.verticalbarsMain {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.verticalbarsMain {
+    margin-top: 50px;
+}
+
+.barcontainer h5 {
+    font-size: 14px;
+    text-align: center;
+    position: relative;
+    top: -30px;
+    color: #0000007a;
+}
+
+.dahboardContent h3 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.teamMembersSec {
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.SuepervisorsSec {
+    margin-bottom: 30px;
+}
+
+.SuepervisorFeedback h3 {
+    margin-bottom: 13px;
+}
+
+.feebbackMain {
+    background: white;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    border-radius: 15px;
+    padding: 25px 15px;
+    padding-bottom: 0;
+}
+
+    .feebbackMain p {
+        font-size: 14px;
+        margin-bottom: 8px;
+        color: #00000096;
+    }
+
+.feed1 {
+    padding-bottom: 30px;
+}
+
+.feebbackMain button {
+    border: none;
+    background: transparent;
+    font-size: 15px;
+    color: #4682a9;
+    padding: 0;
+    text-decoration: underline;
+}
+
+.stdDashSec2 .head h5 {
+    text-transform: uppercase;
+    font-size: 16px;
+    position: relative;
+    padding-left: 18px;
+    margin: 0;
+}
+
+.stdDashSec2 .card {
+    margin-top: 30px;
+    background: white;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    border: none;
+    padding: 14px;
+}
+
+.stdDashSec2 .head h5:before {
+    content: '';
+    width: 8px;
+    height: 8px;
+    background: red;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    top: 5px;
+}
+
+.stdDashSec2 {
+    margin-top: 20px;
+}
+
+    .stdDashSec2 .head {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid #00000014;
+        padding-bottom: 12px;
+    }
+
+        .stdDashSec2 .head button {
+            border: none;
+            border-radius: 50%;
+            color: #4682a9;
+            /* width: 15px; */
+            /* height: 15px; */
+            padding: 3px 10px;
+            /* line-height: 0; */
+            text-align: center;
+            font-size: 19px;
+        }
+
+    .stdDashSec2 .task {
+        background: #4682a973;
+        border-radius: 20px;
+        width: fit-content;
+        padding: 3px 24px;
+        font-size: 15px;
+        text-transform: capitalize;
+    }
+
+    .stdDashSec2 p.dscrpt {
+        font-size: 13px;
+        margin-bottom: 0;
+        padding-top:10px;
+    }
+
+    .stdDashSec2 .card:hover {
+        background: #4682a9;
+        transition: 0.4s ease-in;
+    }
+
+        .stdDashSec2 .card:hover p {
+            color: white;
+        }
+
+        .stdDashSec2 .card:hover h4 {
+            color: white;
+        }
+
+        .stdDashSec2 .card:hover p.task {
+            background: black;
+        }
+
+    .stdDashSec2 .head h5 {
+        text-transform: uppercase;
+        font-size: 16px;
+        position: relative;
+        padding-left: 18px;
+        margin: 0;
+    }
+
+    .stdDashSec2 .card {
+        margin-top: 30px;
+        background: white;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+        border: none;
+        padding: 14px;
+    }
+
+    .stdDashSec2 .head h5:before {
+        content: '';
+        width: 8px;
+        height: 8px;
+        background: red;
+        border-radius: 50%;
+        position: absolute;
+        left: 0;
+        top: 5px;
+    }
+
+.stdDashSec2 {
+    margin-top: 20px;
+}
+
+    .stdDashSec2 .head {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid #00000014;
+        padding-bottom: 12px;
+    }
+
+        .stdDashSec2 .head button {
+            border: none;
+            border-radius: 50%;
+            color: #4682a9;
+            /* width: 15px; */
+            /* height: 15px; */
+            padding: 3px 10px;
+            /* line-height: 0; */
+            text-align: center;
+            font-size: 19px;
+        }
+
+    .stdDashSec2 .task {
+        background: #4682a973;
+        border-radius: 20px;
+        width: fit-content;
+        padding: 3px 24px;
+        font-size: 15px;
+        text-transform: capitalize;
+        margin-bottom: 0;
+    }
+
+    .stdDashSec2 p.dscrpt {
+        font-size: 13px;
+        margin-bottom: 0;
+    }
+
+    .stdDashSec2 .card:hover {
+        background: #4682a9;
+        transition: 0.4s ease-in;
+    }
+
+        .stdDashSec2 .card:hover p {
+            color: white;
+        }
+
+        .stdDashSec2 .card:hover h4 {
+            color: white;
+        }
+
+        .stdDashSec2 .card:hover p.task {
+            background: black;
+        }
+
+    .stdDashSec2 .card .uppersec {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+
+        .stdDashSec2 .card .uppersec img {
+            width: 30px;
+            margin: 0 auto;
+            margin-right: 0;
+        }
+
+        .stdDashSec2 .card .uppersec button {
+            background: transparent;
+            border: none;
+            padding: 0;
+        }
+
+    .stdDashSec2 .head h5 {
+        text-transform: uppercase;
+        font-size: 16px;
+        position: relative;
+        padding-left: 18px;
+        margin: 0;
+    }
+
+    .stdDashSec2 .card {
+        margin-top: 30px;
+        background: white;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+        border: none;
+        padding: 14px;
+    }
+
+    .stdDashSec2 .head h5:before {
+        content: '';
+        width: 8px;
+        height: 8px;
+        background: red;
+        border-radius: 50%;
+        position: absolute;
+        left: 0;
+        top: 5px;
+    }
+
+.stdDashSec2 {
+    margin-top: 20px;
+}
+
+    .stdDashSec2 .head {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid #00000014;
+        padding-bottom: 12px;
+    }
+
+        .stdDashSec2 .head button {
+            border: none;
+            border-radius: 50%;
+            color: #4682a9;
+            /* width: 15px; */
+            /* height: 15px; */
+            padding: 3px 10px;
+            /* line-height: 0; */
+            text-align: center;
+            font-size: 19px;
+        }
+
+    .stdDashSec2 .task {
+        background: #4682a973;
+        border-radius: 20px;
+        width: fit-content;
+        padding: 3px 24px;
+        font-size: 15px;
+        text-transform: capitalize;
+        margin-bottom: 0;
+    }
+
+    .stdDashSec2 p.dscrpt {
+        font-size: 13px;
+        margin-bottom: 0;
+    }
+
+    .stdDashSec2 .card:hover {
+        background: #4682a9;
+        transition: 0.4s ease-in;
+    }
+
+        .stdDashSec2 .card:hover p {
+            color: white;
+        }
+
+        .stdDashSec2 .card:hover h4 {
+            color: white;
+        }
+
+        .stdDashSec2 .card:hover p.task {
+            background: black;
+        }
+
+    .stdDashSec2 .card .uppersec {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+
+        .stdDashSec2 .card .uppersec img {
+            width: 30px;
+            margin: 0 auto;
+            margin-right: 0;
+        }
+
+        .stdDashSec2 .card .uppersec button {
+            background: transparent;
+            border: none;
+            padding: 0;
+        }
+
+.stdDashSec2 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+    .stdDashSec2 .col-4 {
+        margin: 0 7px;
+        width: 32%;
+    }
+
+@media (max-width: 1186px) {
+    .stdDashSec2 .col-4 {
+        width: calc(50% - 14px); /* Subtracting the margins */
+    }
+}
+
+@media (max-width: 800px) {
+    .stdDashSec2 .col-4 {
+        width: calc(100% - 14px); /* Subtracting the margins */
+        margin: 0 auto 20px; /* Center align for single column */
+    }
+}
+
+.pending h5:before {
+    background: #ffc107 !important;
+}
+
+.cmpleted h5:before {
+    background: #198754 !IMPORTANT;
+}
+
+/*Prev projects*/
+
+.prevProjectMain th {
+    font-size: 14px;
+    color: black;
+}
+
+    .prevProjectMain th:nth-child(1) {
+        width: 15%;
+    }
+
+    .prevProjectMain th:nth-child(2) {
+        width: 18%;
+    }
+
+    .prevProjectMain th:nth-child(3) {
+        width: 16%;
+    }
+
+    .prevProjectMain th:nth-child(4) {
+        width: 16%;
+    }
+
+    .prevProjectMain th:nth-child(6) {
+        width: 16%;
+    }
+    .prevProjectMain th:nth-child(7) {
+        width: 12%;
+    }
+
+.prevProjectMain td:nth-child(7) {
+    font-size: 16px;
+}
+
+.prevProjectMain td {
+    font-size: 14px;
+}
+
+    .prevProjectMain td:nth-child(6) {
+        /*display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;*/
+        overflow: hidden;
+        padding-bottom: 4px;
+    }
+
+    .prevProjectMain td:nth-child(8) {
+        margin: 0 auto;
+        text-align: center;
+    }
+
+        .prevProjectMain td:nth-child(8) button {
+            border: none;
+            background: #4682a9;
+            border-radius: 5px;
+            padding: 8px 20px;
+        }
+
+            .prevProjectMain td:nth-child(8) button:Hover {
+                background: #9A9A9A;
+                color: white;
+            }
+
+/*submit Proposal*/
+
+.submitProposalMain {
+    padding: 0 20px;
+}
+
+    .submitProposalMain form {
+        padding-top: 20px;
+    }
+
+        .submitProposalMain form .row {
+            margin-bottom: 27px;
+        }
+
+        .submitProposalMain form label {
+            padding-bottom: 8px;
+        }
+
+        .submitProposalMain form input::placeholder {
+            color: #D0D5DD;
+        }
+
+        .submitProposalMain form textarea::placeholder {
+            color: #D0D5DD;
+        }
+
+        .submitProposalMain form select::placeholder {
+            color: #D0D5DD;
+        }
+
+    .submitProposalMain button {
+        background: #4682a9;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        padding: 12px 40px;
+    }
+
+.subStatus span {
+    color: red;
+}
+
+.subStatus {
+    margin: 20px 0;
+}
+
+.form-container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 16px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    background-color: #fff;
+}
+
+/* Form Inner */
+.form-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Form Group */
+.form-group {
+    margin-bottom: 1px;
+    padding: 6px;
+    box-sizing: border-box;
+}
+
+.upload-group {
+    margin-bottom: 1px;
+    padding: 6px;
+}
+/* Cancel Button */
+.cancel-button {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    /*margin-right: 10px;*/
+}
+
+/* Input and Select */
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* Error Message */
+.error-message {
+    color: red;
+    font-style: italic;
+    font-size: 14px;
+    margin-top: 8px;
+}
+
+/* Mobile Responsive */
+@media (max-width: 1000px) {
+    .form-inner {
+        flex-direction: column;
+    }
+
+    .upload-group {
+        width: 100%;
+        padding: 8px 0;
+    }
+
+    .form-group {
+        width: 100%;
+        padding: 8px 0;
+    }
+}
+    @media (max-width: 600px) {
+        .form-inner {
+            flex-direction: column;
+        }
+
+        .upload-group {
+            width: 100%;
+            padding: 8px 0;
+        }
+
+        .form-group {
+            width: 100%;
+            padding: 8px 0;
+        }
+
+            .form-group label {
+                margin-bottom: 8px;
+            }
+
+            .form-group input,
+            .form-group select,
+            .form-group button {
+                padding: 8px;
+            }
+
+        .cancel-button {
+            margin-bottom: 10px;
+        }
+    }
+
+    /* supervisor proposal */
+
+    .accordion {
+        width: 100%;
+    }
+
+        .accordion .accordion-item {
+            margin-bottom: 35px;
+            background: white;
+            border-radius: 15px;
+            padding: 20px 24px;
+        }
+
+        .accordion .accordion-item {
+            width: 100%;
+        }
+
+            .accordion .accordion-item .accordion-header {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+                .accordion .accordion-item .accordion-header h3 {
+                    margin: 0;
+                    font-size: 22px;
+                }
+
+                .accordion .accordion-item .accordion-header p {
+                    margin: 0;
+                }
+
+    @media screen and (max-width: 1050px) {
+        .accordion .accordion-item .accordion-header h3 {
+            font-size: 18px;
+        }
+
+        .accordion .accordion-item .accordion-header p {
+            font-size: 14px;
+        }
+
+        .accordion .accordion-item .accordion-header .pNo {
+            display: none;
+        }
+
+        .accordion-buttons button {
+            margin: 12px 0px;
+            padding: 2px 14px;
+        }
+    }
+
+    .pStatus {
+        background: #e0090985;
+        color: white !important;
+        padding: 6px 15px;
+        border-radius: 8px;
+    }
+
+    .accordion-arrow {
+        border: none;
+        background: #4682a9;
+        color: white;
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+        padding: 4px;
+    }
+
+    .accordion-content {
+        padding-top: 18px;
+    }
+
+    .accordion-buttons button {
+        margin-right: 20px !IMPORTANT;
+        border: none;
+        padding: 8px 24px;
+        border-radius: 10px;
+        background: #ff0000b8;
+        color: white;
+    }
+
+    .statusApv {
+        background: #09E039 !important;
+    }
+
+        .statusApv:hover {
+            background: #07c732 !important;
+        }
+
+        .statusApv.disabled {
+            cursor: not-allowed;
+            opacity: 0.6;
+        }
+
+        .statusApv:hover:not(:disabled) {
+            background: #848aad;
+        }
+
+    .statusRej {
+        background: #e00909 !important;
+    }
+
+        .statusRej:hover {
+            background: #c70707 !important;
+        }
+
+        .statusRej.disabled {
+            cursor: not-allowed;
+            opacity: 0.6;
+        }
+
+        .statusRej:hover:not(:disabled) {
+            background: #848aad;
+        }
+
+    .statusDwn {
+        background: #34e8eb !important;
+    }
+
+        .statusDwn:hover {
+            background: #2cb6ba !important;
+        }
+
+        .statusDwn.disabled {
+            cursor: not-allowed;
+            opacity: 0.6;
+        }
+
+        .statusDwn:hover:not(:disabled) {
+            background: #848aad;
+        }
+
+    .accordion-content p {
+        font-size: 15px;
+    }
+
+    .tabs .tab:hover {
+        cursor: pointer;
+    }
+
+    .tabs-container .tabs {
+        display: flex;
+    }
+
+        .tabs-container .tabs .tab {
+            margin-right: 30px;
+            color: #707070;
+        }
+
+    .tabs-container {
+        padding-top: 10px;
+    }
+
+    .tab-content {
+        margin-top: 30px;
+    }
+
+    .ProposalsMaainn {
+        padding: 0 30px;
+    }
+
+
+    .tabs-container .tabs .tab.active {
+        color: black;
+        font-weight: 500;
+    }
+
+    .open {
+        background: #4682a9 !IMPORTANT;
+    }
+
+        .open .accordion-header h3 {
+            color: white;
+        }
+
+        .open .accordion-header p {
+            color: white;
+        }
+
+        .open .accordion-content p {
+            color: white;
+        }
+
+
+        .open .accordion-arrow {
+            background: black;
+        }
+
+    .endBtn li {
+        color: white;
+    }
+
+    .tabs-container .tabs .tab.active {
+        color: #4682a9;
+        font-weight: 600;
+        border-bottom: 2px solid #4682a9;
+    }
+
+    .project-page {
+        margin: 0 10px;
+        padding: 10px;
+        background-color: white;
+        /*box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);*/
+        /*border-radius: 10px;*/
+    }
+
+        .project-page .project-info {
+            margin-top: 0px;
+            padding: 15px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 11px;
+        }
+
+            .project-page .project-info p {
+                margin-bottom: 10px;
+            }
+
+        .project-page button {
+            background-color: #4682a9cf;
+            color: #fff;
+            padding: 6px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 18px;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+            .project-page button:hover {
+                background-color: #4682a9;
+            }
+
+        .project-page .project-info .view-submit button {
+            padding: 8px 14px;
+            font-size: 15px;
+            background-color: #4caf50;
+            color: #fff;
+        }
+
+            .project-page .project-info .view-submit button:hover {
+                padding: 8px 14px;
+                font-size: 15px;
+                background-color: #38963b;
+                color: #fff;
+            }
+
+    .project-info button {
+        background-color: #4caf50;
+        color: #fff;
+    }
+
+        .project-info button:hover {
+            background-color: #38963b;
+        }
+
+    .project-page h2 {
+        color: #4682a9;
+        border-bottom: 2px solid #4682a9;
+        padding-bottom: 10px;
+    }
+
+    /* supervisor dashboard  */
+
+    .supDashMain {
+        width: 100%;
+        margin: 0 3%;
+    }
+
+        .supDashMain .banner {
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+            border-radius: 10px;
+            padding: 17px 20px;
+        }
+
+        .supDashMain .bannerimg img {
+            width: 100%;
+        }
+
+        .supDashMain .bannerimg {
+            width: 12%;
+            margin-right: 20px;
+        }
+
+        .supDashMain .bannertxt p {
+            margin: 0;
+        }
+
+    .projOvr {
+        margin-top: 30px;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        border-radius: 10px;
+        padding: 27px 20px;
+    }
+
+        .projOvr h2 {
+            font-size: 24px;
+        }
+
+    .project-card {
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        padding: 16px;
+        margin: 0px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+        max-width: 100%;
+        overflow: hidden;
+        word-wrap: break-word;
+    }
+
+        .project-card .description-container {
+            min-height: 65px; /* Fixed height equivalent to 3 lines */
+            max-height: 65px; /* Ensure it does not exceed this height */
+            width: 100%; /* Full width */
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 3;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            line-height: 1.2em; /* Adjust line height */
+        }
+
+        .project-card h3 {
+            font-size: 1.2em;
+            margin-bottom: 8px;
+            word-break: break-word; /* Prevent overflow for long titles */
+        }
+
+        .project-card p {
+            margin: 4px 0;
+            overflow-wrap: break-word; /* Prevent text overflow */
+        }
+
+        .project-card .progress {
+            margin-top: 16px;
+        }
+
+        .project-card .btnCard {
+            margin-top: 8px;
+        }
+
+        .project-card button {
+            width: 100%; /* Full width buttons for smaller screens */
+        }
+
+        .project-card .Team-member {
+            min-height: 55px;
+            max-height: 55px;
+            width: 100%;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            line-height: 1.2em;
+        }
+
+    @media (max-width: 1068px) {
+        .project-card .Team-member {
+            min-height: 66px;
+            max-height: 68px;
+        }
+    }
+
+    /* Responsive Styles */
+    @media (max-width: 798px) {
+        .project-card {
+            padding: 12px; /* Reduce padding */
+            width: 100%; /* Full width for stacking */
+        }
+
+            .project-card h3 {
+                font-size: 1em; /* Adjust title size */
+            }
+
+            .project-card p {
+                font-size: 0.9em; /* Adjust paragraph size */
+            }
+
+            .project-card .progress {
+                height: 20px; /* Adjust height if necessary */
+            }
+
+            .project-card .btnCard button {
+                padding: 8px; /* Adjust button padding */
+                font-size: 0.9em; /* Adjust button font size */
+            }
+    }
+
+    .progress-bar-container {
+        height: 14px;
+        background-color: #eee;
+        border-radius: 4px;
+        margin-top: 12px;
+        overflow: hidden;
+    }
+
+    .progress-bar-container-row {
+        height: 18px;
+        background-color: #eee;
+        border-radius: 4px;
+        width: 70%;
+        overflow: hidden;
+    }
+
+    .progress-bar {
+        height: 100%;
+        background-color: #4caf50; /* Green color for progress */
+    }
+
+
+    .projOvr h2 {
+        padding-bottom: 20px;
+        font-weight: 600;
+    }
+
+    /*.project-card:hover {
+    background: #4682a9 !important;
+}*/
+
+
+
+    .project-card h3 {
+        color: black;
+        font-size: 22px;
+        font-weight: 600;
+    }
+
+    .project-card h4 {
+        font-size: 17px;
+        margin-bottom: 4px;
+    }
+
+    .project-card p strong {
+        color: #4682a9;
+    }
+
+    .project-card
+    .progress-bar-container p {
+        color: #4caf50;
+    }
+
+    .project-card p.progr {
+        color: #000000 !important;
+        font-size: 14px;
+    }
+
+    .project-card button {
+        border: none;
+        background: #4682a9;
+        color: white;
+        border-radius: 5px;
+        width: 100%;
+        padding: 8px 0;
+        margin-top: 11px;
+    }
+
+    /*.project-card:hover h3 {
+    color: white;
+    text-decoration: underline;
+}
+
+.project-card:hover p {
+    color: white;
+}
+
+.project-card:hover strong {
+    color: white;
+}
+
+.project-card:hover h4 {
+    color: white;
+    text-decoration: underline;
+}
+
+.project-card:hover button {
+    background: black;
+}*/
+
+    .btnCard button:hover {
+        color: white;
+        background-color: lightgreen !important
+    }
+
+
+    /* Project inner page  */
+
+    .projInerMain {
+        width: 100%;
+        margin: 0 2%;
+    }
+
+        .projInerMain .pi1 h3 {
+            font-size: 20px;
+        }
+
+        .projInerMain .pi2 {
+            margin: 30px 0;
+            background: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+            border-radius: 8px;
+        }
+
+            .projInerMain .pi2 .col-4:nth-child(2) {
+                position: relative;
+                left: -45px;
+            }
+
+    /* admin calender  */
+
+    button.addmore {
+        position: absolute;
+        right: 10px;
+        border: none;
+        border-radius: 5px;
+        padding: 4px 20px;
+        top: 0px;
+    }
+
+    .sec1 {
+        position: relative;
+    }
+
+
+
+    /* admin queries */
+
+    .Adminquery th:nth-child(3) {
+        width: 55%;
+    }
+
+    .Adminquery button {
+        border-radius: 5px;
+        border: none;
+        padding: 5px 20px;
+    }
+
+    .QueryRespMain {
+        width: 93%;
+    }
+
+        .QueryRespMain form {
+            margin-top: 30px;
+        }
+
+        .QueryRespMain label {
+            font-size: 17px;
+            font-weight: 600;
+            padding-bottom: 5px;
+        }
+
+        .QueryRespMain button {
+            margin: 30px 0;
+            border-radius: 8px;
+            background: #4682a9;
+            color: white;
+            border: none;
+            padding: 12px 50px;
+        }
+
+        .QueryRespMain h2 {
+            text-decoration: underline;
+        }
+
+    .Adminquery h2 {
+        text-decoration: underline;
+        margin-bottom: 17px;
+    }
+
+    .AdminDocsMain button {
+        border-radius: 8px;
+        background: #4682a9;
+        color: white;
+        border: none;
+        padding: 10px 40px;
+        margin-right: 15px;
+    }
+
+    .AdminDocsMain {
+        width: 90%;
+        margin-bottom: 30px;
+    }
+
+        .AdminDocsMain button:hover {
+            background: black;
+            transition: 0.5s;
+        }
+
+        .AdminDocsMain h2 {
+            text-decoration: underline;
+            margin-bottom: 20px;
+        }
+
+    .loginform .signUpBtn {
+        margin: 0 auto;
+        display: table;
+        margin-right: 0;
+        background: transparent;
+        border: none;
+        color: #4682a9;
+        margin-top: 5px;
+    }
+
+    .signup-form {
+        border: 1px solid #ccc;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+        .signup-form input[type="text"],
+        .signup-form input[type="email"],
+        .signup-form input[type="submit"] {
+            width: 49%;
+            margin-right: 4px;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        .signup-form input[type="submit"] {
+            background-color: #4682a9;
+            color: white;
+            cursor: pointer;
+        }
+
+            .signup-form input[type="submit"]:hover {
+                background-color: #45a049;
+            }
+
+        .signup-form input[type="text"]::placeholder,
+        .signup-form input[type="email"]::placeholder {
+            color: #aaa;
+        }
+
+        .signup-form br {
+            display: none;
+        }
+
+        .signup-form form {
+            overflow: auto;
+        }
+
+    .registerr .leftcolreg {
+        padding: 0 50px !important;
+    }
+
+    .signup-form input[type="submit"] {
+        width: 99%;
+    }
+
+    .accordion-content {
+        color: wheat;
+    }
+
+        .accordion-content th, td {
+            border: 1px solid;
+            padding: 2px 4px;
+            font-size: 15px;
+        }
+
+        .accordion-content table {
+            margin-bottom: 19px;
+        }
+
+    .accordion-header li {
+        list-style: none;
+    }
+
+    .regView {
+        text-decoration: none;
+        background: #4682a9;
+        color: #ffffff;
+        border-radius: 10px;
+        padding: 6px 20px;
+    }
+
+    .accordion-item.open .regView {
+        background: white;
+        color: #4682a9;
+    }
+
+    .accordion-item.open h5 {
+        color: white;
+    }
+
+    .adminRegis tr td button {
+        border-radius: 5px;
+        margin: 0 auto;
+        display: table;
+        padding: 3px 14px;
+        text-decoration: none;
+    }
+
+    button.AdmApv {
+        background: green;
+        color: white;
+    }
+
+    .AdmRej {
+        background: #c71b1b;
+        color: white;
+    }
+
+    .adminRegis tr td a {
+        text-decoration: none;
+    }
+
+    .Registrationdata label {
+        font-weight: 600;
+    }
+
+    button.appprovee {
+        background: green;
+    }
+
+    button.rejecttt {
+        background: #c31414;
+    }
+
+    .Registrationdata .col {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .Registrationdata {
+        width: 65%;
+    }
+
+        .Registrationdata input {
+            border-radius: 5px;
+            padding: 9px 10px;
+        }
+
+    .signup-form label {
+        display: block;
+        font-size: 17px;
+        margin-bottom: 4px;
+    }
+
+    .signup-form select {
+        padding: 6px;
+        margin-bottom: 19px;
+    }
+
+    .signup-form button {
+        width: 100%;
+        border-radius: 5px;
+        padding: 10px 0;
+        background: #4682a9;
+        border: navajowhite;
+        color: white;
+        font-size: 16px;
+        margin-bottom: 9px;
+    }
+
+    .fypregform input[type="text"] {
+        width: 100%;
+    }
+
+    .fypregform label {
+        text-transform: capitalize;
+    }
+
+    .signUpBtn li {
+        list-style: none;
+    }
+
+    .AdmSup {
+        width: 95%;
+    }
+
+    .AdmSupRow2 {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .AdmSup .superCurrdDtails {
+        display: flex;
+        align-items: center;
+    }
+
+    .AdmSup .newSupAddBtn button.addButton {
+        background: #4682a9;
+        border: none;
+        border-radius: 8px;
+        padding: 5px 15px;
+        color: white;
+    }
+
+    /*Admin sup Cards Layout*/
+
+    .AdmSup .super3 {
+        justify-content: flex-start !important;
+        align-items: flex-start !important;
+    }
+
+    .AdmSup .col-3 {
+        width: 32% !important;
+    }
+
+    @media (max-width: 1280px) {
+        .AdmSup .col-md-6 {
+            width: 50% !important;
+        }
+    }
+
+    @media (max-width: 680px) {
+        .AdmSup .col-sm-12 {
+            width: 100% !important;
+        }
+    }
+
+    .elipsetogle {
+        position: absolute;
+        right: 13px;
+        top: 20px;
+    }
+
+    .supervisor_card {
+        position: relative;
+    }
+
+    .elipsetogle:hover {
+        cursor: pointer;
+    }
+
+    .editIcon .options {
+        position: absolute;
+        right: 50px;
+        width: 39%;
+        top: 20px;
+    }
+
+        .editIcon .options button {
+            margin-bottom: 3px;
+            width: 109%;
+        }
+
+    .AdmSup .supervisor_card button {
+        margin-bottom: 4px;
+    }
+
+    .AdmSup .supervisor_card p {
+        margin-bottom: 7px;
+    }
+
+    .AdmSupRow2 .super3 .col-3 {
+        margin-bottom: 10px !important;
+    }
+
+    .AdmSup .super3 {
+        justify-content: space-between !IMPORTANT;
+    }
+
+    .supervisorMain .AdminSupCont .super3 .col-3 {
+        margin: unset;
+        margin-bottom: 12px;
+    }
+
+    .AdmCal .container {
+        margin: 15px;
+    }
+
+    .AdmCal ul li div:nth-child(1) {
+        width: 200px;
+    }
+
+    .AdmCal ul li div:nth-child(2) {
+        width: 400px;
+    }
+
+    .AdmCal ul li button {
+        border-radius: 8px;
+        background: #4682a9;
+        border: #ffdead00;
+        padding: 4px 25px;
+        color: white;
+    }
+
+    .AdmSupDetails {
+        width: 90%;
+    }
+
+        .AdmSupDetails textarea {
+            width: 70%;
+        }
+
+        .AdmSupDetails input[type="text"] {
+            width: 40%;
+        }
+
+    .AdmSupDetails {
+        width: 90%;
+    }
+
+        .AdmSupDetails textarea {
+            width: 70%;
+        }
+
+        .AdmSupDetails input[type="text"] {
+            width: 40%;
+        }
+
+    .AdmSup a.view_button {
+        width: 100% !important;
+        background: #4682A9;
+        border: none;
+        border-radius: 5px;
+        color: white;
+        padding: 9px 0;
+        display: block;
+        text-align: center;
+        text-decoration: none;
+        margin-bottom: 5px;
+    }
+
+    .AdmSup
+    .supervisor_card:hover a.view_button {
+        background: white;
+        color: black;
+    }
+
+    .AdmSup .super3 {
+        justify-content: flex-start !important;
+    }
+
+    .supervisorMain .AdminSupCont .super3 .col-3 {
+        margin: 6px;
+    }
+
+    .DeleteOnGoingProj {
+        padding: 5px 20px !important;
+        font-size: 16px !important;
+    }
+
+    .project-page button {
+        margin: 2px 7px;
+    }
+
+    .AdmSupDetails input {
+        border-radius: 5px;
+        border-color: #0000001a;
+        padding: 2px 10px;
+    }
+
+    .AdmSupDetails textarea {
+        border-radius: 5px;
+        border-color: #0000001a;
+        padding: 2px 10px;
+    }
+
+    .supervisorBtns {
+        display: flex;
+        justify-content: left;
+        align-items: center;
+    }
+
+    .accordion-content th, td {
+        border-color: #00000021;
+        border-right: none;
+        border-left: 0;
+    }
+
+    .prevProjectMain {
+        padding: 0;
+    }
+
+        .prevProjectMain th {
+            color: #000000cc;
+        }
+
+    .form-control {
+        width: 100%;
+        margin: 0px auto;
+    }
+
+    .prevProjectMain th:nth-child(1) {
+        padding-left: 14px;
+    }
+
+    .prevProjectMain td:nth-child(1) {
+        padding-left: 16px;
+    }
+    /* Modal */
+    .modal {
+        display: block;
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0,0,0,0.4); /* Overlay */
+    }
+
+    /* Modal Content */
+    .modal-content {
+        background-color: #fefefe;
+        margin: 15% auto;
+        padding: 20px;
+        border: 1px solid #888;
+        width: 80%;
+        max-width: 500px;
+        position: relative;
+    }
+
+    .addSupervisorButton.disabled {
+        cursor: not-allowed;
+        opacity: 0.6;
+    }
+
+    /*.addSupervisorButton:hover:not(:disabled) {
+    background: #848aad;
+}*/
+
+    /* Close Button */
+    .close {
+        color: #aaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+    }
+
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    /* Styling for buttons */
+    .AdmSup button {
+        background-color: #4682a9;
+        border: none;
+        color: white;
+        padding: 6px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 8px;
+    }
+
+        .AdmSup button:hover {
+            background-color: #4682a9b0;
+        }
+
+    .AdmSup a {
+        background-color: #4682a9;
+        border: none;
+        color: white;
+        padding: 6px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 8px;
+    }
+
+        .AdmSup a:hover {
+            background-color: #4682a9b0;
+        }
+    /* Styling for cards */
+    .card {
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        margin-bottom: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        min-height: 300px;
+        max-height: 300px
+    }
+
+    .card-header {
+        background-color: #f0f0f0;
+        padding: 15px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+    }
+
+    .card-body {
+        padding: 15px;
+        overflow: hidden;
+        max-height: 230px;
+        position: relative;
+    }
+
+        .card-body:hover {
+            overflow-y: auto; /* Show scroll on hover */
+        }
+
+        .card-body::-webkit-scrollbar {
+            width: 0; /* Hide scrollbar width */
+        }
+
+        .card-body::-webkit-scrollbar-thumb {
+            background: transparent; /* Invisible scrollbar thumb */
+        }
+
+    .pref-paragraph {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: 100%;
+        display: block;
+        vertical-align: middle;
+    }
+
+    @media (min-width: 600px) {
+        .pref-paragraph {
+            max-width: 300px;
+        }
+    }
+
+
+    @media (max-width: 1200px) {
+        .card {
+            min-height: 340px;
+            max-height: 340px;
+        }
+
+        .card-header {
+            justify-content: space-evenly;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+
+
+            .card-header h3 {
+                text-align: center;
+                width: 100%;
+            }
+
+            .card-header .viewButton,
+            .card-header .deleteButton {
+                margin: 5px 0;
+                width: 100%;
+                text-align: center;
+            }
+    }
+
+
+    /* Styling for modal */
+    .modal {
+        display: block;
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgba(0,0,0,0.4);
+    }
+
+    .modal-content {
+        background-color: #fefefe;
+        margin: 15% auto;
+        padding: 20px;
+        border: 1px solid #888;
+        width: 80%;
+        border-radius: 8px;
+    }
+
+    .close {
+        color: #aaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+        width: 10%;
+    }
+
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+    .modal h2 {
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+
+    .modal label {
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    .modal input[type="text"],
+    .modal textarea {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+
+    .modal textarea {
+        height: 100px;
+    }
+
+
+    .card-header h3 {
+        width: 100%;
+        display: block !important;
+        text-align: center;
+        align-items: center;
+    }
+
+    .bio-paragraph {
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .modal button {
+        background-color: #4682a9;
+        border: none;
+        color: white;
+        padding: 6px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 8px;
+    }
+
+        .modal button:hover {
+            background-color: #4682a9b0;
+            color: black;
+        }
+
+    .modal input[type="date"] {
+        padding: 5px 10px;
+        margin-right: 0;
+    }
+
+    .AdmCal ul li button {
+        margin-left: 8px;
+    }
+
+    *.progress-bar-container {
+        width: 100px;
+        height: 20px;
+        border: 1px solid #ccc;
+        position: relative;
+        overflow: hidden; /* Hide overflowing progress bar */
+    }
+
+    .progress-bar {
+        height: 100%;
+        background: linear-gradient(to right, #4caf50, #8bc34a); /* Gradient background */
+    }
+    /* Add this CSS to your existing CSS file or create a new one and import it */
+
+    /*table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}*/
+
+    /*tr:hover {
+    background-color: #f5f5f5;
+}*/
+
+    input[type="text"] {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+
+    button {
+        padding: 8px 16px;
+        background-color: #4caf50;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+    .OnGoingProjMain {
+        width: 95%;
+    }
+
+    .project-page {
+        width: 100%;
+    }
+
+    /*Selectable field styling*/
+    .custom-select {
+        cursor: pointer;
+        border: 1px solid #ccc;
+        padding: 8px 12px;
+        border-radius: 4px;
+        transition: border-color 0.3s ease;
+    }
+
+        /* Hover effect for the custom-select class */
+        .custom-select:hover {
+            border-color: #007bff;
+        }
+
+    /* Custom styles for the cancel button */
+    .cancel-button {
+        background: none;
+        border: none;
+        cursor: pointer;
+        font-size: 18px;
+        color: #aaa;
+        padding: 0;
+    }
+
+        .cancel-button:hover {
+            background: #f00;
+            ;
+            color: none
+        }
+
+        .cancel-button span {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            line-height: 20px;
+            text-align: center;
+        }
+
+    /*Projects and Proposal Table Styling*/
+
+    .table-responsive {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    /* Minimalist Table Styles */
+    .minimalist-table {
+        width: 100%;
+        border-collapse: collapse;
+        min-width: 600px;
+    }
+
+        .minimalist-table th, .minimalist-table td {
+            /*border: 1px solid #ddd;*/
+            padding: 8px;
+            text-align: left;
+            white-space: nowrap;
+        }
+
+        .minimalist-table th {
+            background-color: #f2f2f2;
+            color: #333;
+            font-weight: bold;
+        }
+
+    @media (max-width: 1100px) {
+        .minimalist-table {
+            display: block;
+            width: 100%;
+            overflow-x: auto;
+        }
+
+            .minimalist-table th, .minimalist-table td {
+                white-space: nowrap;
+            }
+    }
+
+    /* Button Styles */
+    .action-button {
+        background-color: #4CAF50; /* Green */
+        border: none;
+        color: white;
+        padding: 8px 12px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 12px;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+        .action-button:hover {
+            background-color: #45a049; /* Darker Green on Hover */
+        }
+
+    /* Link Styles */
+    .view-link {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    /*For Tags*/
+    .tags-input-container {
+        padding: .1em;
+        border-radius: 3px;
+        width: min(80vw, 450px);
+        margin-top: .5em;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: .5em;
+    }
+
+    .tag-item {
+        background-color: rgb(218, 216, 216);
+        display: inline-block;
+        padding: .5em .75em;
+        border-radius: 20px;
+    }
+
+        .tag-item .close {
+            height: 20px;
+            width: 20px;
+            background-color: rgb(48, 48, 48);
+            color: #fff;
+            border-radius: 50%;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: .5em;
+            font-size: 18px;
+            cursor: pointer;
+        }
+
+    .tags-input {
+        flex-grow: 1;
+        padding: .5em 0;
+        border: none;
+        outline: none;
+    }
+
+
+    .notification-icon {
+        cursor: pointer;
+        width: 24px;
+        height: 24px;
+    }
+
+    .notification-count {
+        background-color: red;
+        color: white;
+        border-radius: 50%;
+        padding: 2px 6px;
+        font-size: 12px;
+        position: absolute;
+        top: -10px;
+        right: -10px;
+    }
+
+    /*.dropdown-menu {
+    position: absolute;
+    top: 30px;
+    right: 0;
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    width: 250px;
+    max-height: 300px;
+    overflow-y: auto;
+    z-index: 1000;
+}
+
+    .dropdown-menu li {
+        padding: 10px;
+        border-bottom: 1px solid #eaeaea;
+    }
+
+        .dropdown-menu li:last-child {
+            border-bottom: none;
+        }*/
+
+    .notification-dropdown .dropdown-menu {
+        top: 40px;
+        right: -20px;
+    }
+
+    

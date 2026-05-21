@@ -1,0 +1,5 @@
+
+DB CONNECTION STRING:-
+Scaffold-DbContext "server=SERVER_NAME; database=DATABASE_NAME; trusted_connection=true" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models
+
+SERVER_NAME SHOULD BE YOUR SQL SERVER MANAGEMENT STUDIO'S SERVER
